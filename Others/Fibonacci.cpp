@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-std::size_t fibonacci_non_recursive(std::size_t value) noexcept
+std::size_t fibonacciNonRecursive(std::size_t value) noexcept
 {
     if (value < 2)
         return value;
@@ -27,7 +27,7 @@ int main()
         std::cin >> number;
         std::cout << "-----------\nAnswer: ";
         number = number < 5 ? 5 : (number > 100 ? 100 : number);
-        std::cout << fibonacci_non_recursive(number) << "\n";
+        std::cout << fibonacciNonRecursive(number) << "\n";
         std::cout << "-----------\n";
     }
     
