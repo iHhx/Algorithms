@@ -28,7 +28,6 @@ int main()
         std::cout << "-----------\nAnswer: ";
         number = number < 5 ? 5 : (number > 100 ? 100 : number);
         std::cout << fibonacci_non_recursive(number) << "\n";
-
         std::cout << "-----------\n";
     }
     
