@@ -5,10 +5,10 @@ class CircularBuffer
 {
 public:
     CircularBuffer()
-        : capacity(8)
-        , element_count(0)
-        , head(0)
-        , tail(0) { p = new T[capacity]; }
+        : capacity(8u)
+        , element_count(0u)
+        , head(0u)
+        , tail(0u) { p = new T[capacity]; }
 
     ~CircularBuffer() { delete[] p; }
 
@@ -35,11 +35,11 @@ template<class T>
 void CircularBuffer<T>::reserve(std::size_t new_capacity) noexcept
 {
     if (new_capacity < 1)
-            new_capacity = 1;
+            new_capacity = 1u;
 
     T* new_p = new T[new_capacity];
 
-    for (std::size_t i = 0; i < new_capacity; i++)
+    for (std::size_t i = 0u; i < new_capacity; i++)
     {
         new_p[i] = p[(head + i) % capacity];
     }
@@ -47,7 +47,7 @@ void CircularBuffer<T>::reserve(std::size_t new_capacity) noexcept
     delete[] p;
     p = new_p;
     capacity = new_capacity;
-    head = 0;
+    head = 0u;
     tail = element_count;
 }
 
@@ -58,7 +58,7 @@ void CircularBuffer<T>::push_front(int val) noexcept
     {
         reserve(capacity << 1);
     }
-    head = (!head ? capacity - 1 : head - 1);
+    head = (!head ? capacity - 1u : head - 1u);
     p[head] = val;
 
     ++element_count;
@@ -72,7 +72,7 @@ void CircularBuffer<T>::push_back(int val) noexcept
         reserve(capacity << 1);
     }
     p[tail] = val;
-    tail = (tail + 1) % capacity;
+    tail = (tail + 1u) % capacity;
 
     ++element_count;
 }
@@ -80,7 +80,7 @@ void CircularBuffer<T>::push_back(int val) noexcept
 template<class T>
 void CircularBuffer<T>::pop_front() noexcept
 {
-    head = (head + 1) % capacity;
+    head = (head + 1u) % capacity;
 
     --element_count;
 }
@@ -88,7 +88,7 @@ void CircularBuffer<T>::pop_front() noexcept
 template<class T>
 void CircularBuffer<T>::pop_back() noexcept
 {
-    tail = (!tail ? capacity - 1 : tail - 1);
+    tail = (!tail ? capacity - 1u : tail - 1u);
 
     --element_count;
 }
@@ -104,12 +104,12 @@ void CircularBuffer<T>::print() const noexcept
     std::cout << "\n--------head - tail--------\n";
     if(!element_count)
         std::cout << "CircularBuffer Empty";
-    for (std::size_t i = 0; i < element_count; ++i)
+    for (std::size_t i = 0u; i < element_count; ++i)
     {
         std::cout << p[(head + i) % capacity] << " ";
     }
     std::cout << "\n\n--------real memory--------\n";
-    for (std::size_t i = 0; i < capacity; ++i)
+    for (std::size_t i = 0u; i < capacity; ++i)
     {
         std::cout << p[i] << " ";
     }

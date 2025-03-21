@@ -15,6 +15,13 @@ set_target_properties (CircularBuffer PROPERTIES FOLDER "Others")
 
 # Others
 add_executable (Fibonacci ./Others/Fibonacci.cpp)
-add_executable (MoveElementsToLeftOrRight ./Others/MoveElementsToLeftOrRight.cpp)
 add_executable (RotateMatrix ./Others/RotateMatrix.cpp)
-set_target_properties (Fibonacci MoveElementsToLeftOrRight RotateMatrix PROPERTIES FOLDER "Others")
+set_target_properties (Fibonacci RotateMatrix PROPERTIES FOLDER "Others")
+
+# Search
+add_executable (BinarySearch ./Search/BinarySearch.cpp)
+set_target_properties (BinarySearch PROPERTIES FOLDER "Others")
+
+# Sorting
+add_executable (MoveElementsToLeftOrRight ./Sorting/MoveElementsToLeftOrRight.cpp)
+set_target_properties (MoveElementsToLeftOrRight PROPERTIES FOLDER "Others")

@@ -46,11 +46,10 @@ int main()
     const std::uint8_t key = 7;
     const std::string text = "Alexandr";
     const std::string encryptedText = enCaesarCipher(text, key);
-    const std::string decryptedText = deCaesarCipher(encryptedText, key);
 
     std::cout << "Source text: " << text << std::endl;
     std::cout << "Encrypted text: " << encryptedText << std::endl;
-    std::cout << "Decrypted text: " << decryptedText << std::endl;
+    std::cout << "Decrypted text: " << deCaesarCipher(encryptedText, key) << std::endl;
 
     return 0;
 }
