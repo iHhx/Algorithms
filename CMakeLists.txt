@@ -7,11 +7,12 @@ set_property (GLOBAL PROPERTY USE_FOLDERS ON)
 
 # Cryptography
 add_executable (CaesarCipher ./Cryptography/CaesarCipher.cpp)
-set_target_properties (CaesarCipher PROPERTIES FOLDER "Others")
+#add_executable (iHhx ./Cryptography/iHhx.cpp)
+set_target_properties (CaesarCipher PROPERTIES FOLDER "Cryptography")
 
 # DataStructures
 add_executable (CircularBuffer ./DataStructures/CircularBuffer.cpp)
-set_target_properties (CircularBuffer PROPERTIES FOLDER "Others")
+set_target_properties (CircularBuffer PROPERTIES FOLDER "DataStructures")
 
 # Others
 add_executable (Fibonacci ./Others/Fibonacci.cpp)
@@ -20,8 +21,9 @@ set_target_properties (Fibonacci RotateMatrix PROPERTIES FOLDER "Others")
 
 # Search
 add_executable (BinarySearch ./Search/BinarySearch.cpp)
-set_target_properties (BinarySearch PROPERTIES FOLDER "Others")
+add_executable (LinearSearch ./Search/LinearSearch.cpp)
+set_target_properties (BinarySearch LinearSearch PROPERTIES FOLDER "Search")
 
 # Sorting
 add_executable (MoveElementsToLeftOrRight ./Sorting/MoveElementsToLeftOrRight.cpp)
-set_target_properties (MoveElementsToLeftOrRight PROPERTIES FOLDER "Others")
+set_target_properties (MoveElementsToLeftOrRight PROPERTIES FOLDER "Sorting")

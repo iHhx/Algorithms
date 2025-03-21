@@ -16,12 +16,12 @@ int binarySearchNonRecursive(const Collection& col, const ValueType<Collection>&
 
     while (left <= right)
     {
-        if (col[middle] < val)
+        if (val > col[middle])
         {
             left = middle + 1;
             middle = left + (right - left) / 2;
         }
-        else if (col[middle] > val)
+        else if (val < col[middle])
         {
             right = middle - 1;
             middle = left + (right - left) / 2;
@@ -44,11 +44,11 @@ int binarySearchRecursive(const Collection& col,
 
     if (left <= right)
     {
-        if (col[middle] < val)
+        if (val > col[middle])
         {
             return binarySearchRecursive(col, val, middle + 1, right);
         }
-        else if (col[middle] > val)
+        else if (val < col[middle])
         {
             return binarySearchRecursive(col, val, left, middle - 1);
         }
@@ -62,7 +62,7 @@ int binarySearchRecursive(const Collection& col,
 
 int main()
 {
-    const std::vector<int> vector = { 2, 3, 7, 17, 27, 44, 57, 61, 87, 91 };
+    const std::vector<int> vector = { 2,3,7,17,27,44,57,61,87,91 };
 
     std::cout << "Index: " << binarySearchNonRecursive(vector, 17) << std::endl;
     std::cout << "Index: " << binarySearchRecursive(vector, 61, 0, vector.size()) << std::endl;
