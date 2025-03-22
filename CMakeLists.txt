@@ -25,5 +25,6 @@ add_executable (LinearSearch ./Search/LinearSearch.cpp)
 set_target_properties (BinarySearch LinearSearch PROPERTIES FOLDER "Search")
 
 # Sorting
+add_executable (CountingSort ./Sorting/CountingSort.cpp)
 add_executable (MoveElementsToLeftOrRight ./Sorting/MoveElementsToLeftOrRight.cpp)
-set_target_properties (MoveElementsToLeftOrRight PROPERTIES FOLDER "Sorting")
+set_target_properties (CountingSort MoveElementsToLeftOrRight PROPERTIES FOLDER "Sorting")
