@@ -25,6 +25,10 @@ add_executable (BinarySearch ./Search/BinarySearch.cpp)
 add_executable (LinearSearch ./Search/LinearSearch.cpp)
 set_target_properties (BinarySearch LinearSearch PROPERTIES FOLDER "Search")
 
+# SmartPtr
+add_executable (UniquePtr ./SmartPtr/UniquePtr.cpp)
+set_target_properties (UniquePtr PROPERTIES FOLDER "SmartPtr")
+
 # Sorting
 add_executable (CountingSort ./Sorting/CountingSort.cpp)
 add_executable (MoveElementsToLeftOrRight ./Sorting/MoveElementsToLeftOrRight.cpp)
