@@ -23,7 +23,8 @@ set_target_properties (Fibonacci ReversalForwardList RotateMatrix PROPERTIES FOL
 # Search
 add_executable (BinarySearch ./Search/BinarySearch.cpp)
 add_executable (LinearSearch ./Search/LinearSearch.cpp)
-set_target_properties (BinarySearch LinearSearch PROPERTIES FOLDER "Search")
+add_executable (TernarySearch ./Search/TernarySearch.cpp)
+set_target_properties (BinarySearch LinearSearch TernarySearch PROPERTIES FOLDER "Search")
 
 # SmartPtr
 add_executable (UniquePtr ./SmartPtr/UniquePtr.cpp)
