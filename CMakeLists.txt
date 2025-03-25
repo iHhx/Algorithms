@@ -9,8 +9,8 @@ set_property (GLOBAL PROPERTY USE_FOLDERS ON)
 add_executable (CaesarCipher ./Cryptography/CaesarCipher.cpp)
 add_executable (CryptoRandom ./Cryptography/CryptoRandom.cpp)
 add_executable (Hex ./Cryptography/Hex.cpp)
-add_executable (RC4 ./Cryptography/RC4.cpp)
-set_target_properties (CaesarCipher CryptoRandom Hex RC4 PROPERTIES FOLDER "Cryptography")
+add_executable (RC4Cipher ./Cryptography/RC4.cpp)
+set_target_properties (CaesarCipher CryptoRandom Hex RC4Cipher PROPERTIES FOLDER "Cryptography")
 
 # DataStructures
 add_executable (CircularBuffer ./DataStructures/CircularBuffer.cpp)
@@ -31,7 +31,8 @@ set_target_properties (BinarySearch LinearSearch TernarySearch PROPERTIES FOLDER
 
 # SmartPtr
 add_executable (UniquePtr ./SmartPtr/UniquePtr.cpp)
-set_target_properties (UniquePtr PROPERTIES FOLDER "SmartPtr")
+add_executable (SharedPtr ./SmartPtr/SharedPtr.cpp)
+set_target_properties (SharedPtr UniquePtr PROPERTIES FOLDER "SmartPtr")
 
 # Sorting
 add_executable (CountingSort ./Sorting/CountingSort.cpp)
@@ -39,5 +40,5 @@ add_executable (MoveElementsToLeftOrRight ./Sorting/MoveElementsToLeftOrRight.cp
 set_target_properties (CountingSort MoveElementsToLeftOrRight PROPERTIES FOLDER "Sorting")
 
 # Templates
-add_executable (NumberToString ./Templates/NumberToString.cpp)
-set_target_properties (NumberToString PROPERTIES FOLDER "Templates")
+add_executable (NumberToString32Bits ./Templates/NumberToString32Bits.cpp)
+set_target_properties (NumberToString32Bits PROPERTIES FOLDER "Templates")

@@ -33,6 +33,7 @@ project contains the following algorithms...
 
 | Name pointer                             |
 |:----------------------------------------:|
+| Shared smart pointer                     |
 | Unique smart pointer                     |
 
 ## Sorting
@@ -53,4 +54,4 @@ project contains the following algorithms...
 ## Templates
 | Name templates               |
 |:----------------------------:|
-| Number To String             |
+| Number To String 32 Bits     |
