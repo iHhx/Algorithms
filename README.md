@@ -12,7 +12,8 @@ project contains the following algorithms...
 | Name algorithm                           |
 |:----------------------------------------:|
 | Caesar cipher                            |
-| RC4 cipher                            |
+| Hex                                      |
+| RC4 cipher                               |
 
 ## Data structures
 
@@ -46,3 +47,8 @@ project contains the following algorithms...
 | Fibonacci                    |
 | Reversal Forward List        |
 | Rotate Matrix                |
+
+## Templates
+| Name templates               |
+|:----------------------------:|
+| Number To String             |
