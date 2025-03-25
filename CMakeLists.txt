@@ -34,3 +34,7 @@ set_target_properties (UniquePtr PROPERTIES FOLDER "SmartPtr")
 add_executable (CountingSort ./Sorting/CountingSort.cpp)
 add_executable (MoveElementsToLeftOrRight ./Sorting/MoveElementsToLeftOrRight.cpp)
 set_target_properties (CountingSort MoveElementsToLeftOrRight PROPERTIES FOLDER "Sorting")
+
+# Templates
+add_executable (NumberToString ./Templates/NumberToString.cpp)
+set_target_properties (NumberToString PROPERTIES FOLDER "Templates")

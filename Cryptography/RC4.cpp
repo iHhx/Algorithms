@@ -66,8 +66,8 @@ public:
 	}
 };
 
-int main(void) {
-
+int main()
+{
 	RC4 test("Test text for testing...");
 
 	test.print();
