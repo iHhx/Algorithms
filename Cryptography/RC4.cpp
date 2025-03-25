@@ -13,7 +13,6 @@ class RC4
 	int word_size;
 
 public:
-
 	RC4(const char* w, const char* k = "it's a key!")
 		: word(w)
 		, word_size(strlen(w))
@@ -79,5 +78,6 @@ int main(void) {
 	test.xor_encrypt();
 	test.print();
 
+	system("pause");
 	return 0;
 }
