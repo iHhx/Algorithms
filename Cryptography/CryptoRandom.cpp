@@ -74,7 +74,6 @@ int main()
 	{
 		std::cout << (int)output[i] << "\n";
 	}
-	std::cout << "----\n";
 
 	return 0;
 }

@@ -45,6 +45,7 @@ project contains the following algorithms...
 ## Others
 | Name algorithm               |
 |:----------------------------:|
+| BackTrack                    |
 | Fibonacci                    |
 | Reversal Forward List        |
 | Rotate Matrix                |
