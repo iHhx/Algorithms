@@ -13,6 +13,7 @@ project contains the following algorithms...
 |:----------------------------------------:|
 | Caesar cipher                            |
 | Hex                                      |
+| Random and Crypto Random + Entropy       |
 | RC4 cipher                               |
 
 ## Data structures

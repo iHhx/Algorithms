@@ -7,9 +7,10 @@ set_property (GLOBAL PROPERTY USE_FOLDERS ON)
 
 # Cryptography
 add_executable (CaesarCipher ./Cryptography/CaesarCipher.cpp)
+add_executable (CryptoRandom ./Cryptography/CryptoRandom.cpp)
 add_executable (Hex ./Cryptography/Hex.cpp)
 add_executable (RC4 ./Cryptography/RC4.cpp)
-set_target_properties (CaesarCipher Hex RC4 PROPERTIES FOLDER "Cryptography")
+set_target_properties (CaesarCipher CryptoRandom Hex RC4 PROPERTIES FOLDER "Cryptography")
 
 # DataStructures
 add_executable (CircularBuffer ./DataStructures/CircularBuffer.cpp)
