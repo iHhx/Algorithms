@@ -38,7 +38,8 @@ set_target_properties (SharedPtr UniquePtr PROPERTIES FOLDER "SmartPtr")
 # Sorting
 add_executable (CountingSort ./Sorting/CountingSort.cpp)
 add_executable (MoveElementsToLeftOrRight ./Sorting/MoveElementsToLeftOrRight.cpp)
-set_target_properties (CountingSort MoveElementsToLeftOrRight PROPERTIES FOLDER "Sorting")
+add_executable (SelectionSorting ./Sorting/SelectionSorting.cpp)
+set_target_properties (CountingSort MoveElementsToLeftOrRight SelectionSorting PROPERTIES FOLDER "Sorting")
 
 # Templates
 add_executable (NumberToString32Bits ./Templates/NumberToString32Bits.cpp)

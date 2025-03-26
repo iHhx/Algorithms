@@ -43,6 +43,7 @@ project contains the following algorithms...
 |:---------------------:|:-------------:|:------------:|:--------------:|:------------:|
 | Counting sorting      |  Array        | O(n)         | O(n)           | O(n)         |
 | Move Elements To Left |  Array        | O(n)         | O(n)           | O(n)         |
+| Selection Sorting     |  Array        | O(n)         | O(n^2)         | O(n^2)       |
 
 ## Others
 | Name algorithm               |
