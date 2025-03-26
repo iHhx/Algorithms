@@ -104,7 +104,7 @@ SharedPtr<T>::~SharedPtr()
         delete count;
     }
 }
-
+#include<vector>
 int main()
 {
     // Test structure for testing
@@ -112,7 +112,7 @@ int main()
     {
         double x, y;
     };
-
+    
     SharedPtr<Vector2d> ptr1(new Vector2d());
     SharedPtr<Vector2d> ptr2(ptr1);
 

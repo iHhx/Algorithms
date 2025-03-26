@@ -14,7 +14,8 @@ set_target_properties (CaesarCipher CryptoRandom Hex RC4Cipher PROPERTIES FOLDER
 
 # DataStructures
 add_executable (CircularBuffer ./DataStructures/CircularBuffer.cpp)
-set_target_properties (CircularBuffer PROPERTIES FOLDER "DataStructures")
+add_executable (LinkedList ./DataStructures/LinkedList.cpp)
+set_target_properties (CircularBuffer LinkedList PROPERTIES FOLDER "DataStructures")
 
 # Others
 add_executable (BackTrack ./Others/BackTrack.cpp)

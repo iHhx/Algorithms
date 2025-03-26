@@ -21,6 +21,7 @@ project contains the following algorithms...
 | Name structure     | Indexation  | Search         | Inserting    | Deleting    | Memory |
 |:------------------:|:-----------:|:--------------:|:------------:|:-----------:|:------:|
 | Circular Buffer    | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
+| LinkedList         | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
 
 ## Search
 
