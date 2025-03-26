@@ -13,15 +13,15 @@ project contains the following algorithms...
 |:----------------------------------------:|
 | Caesar cipher                            |
 | Hex                                      |
-| Random and Crypto Random + Entropy       |
+| Random and crypto random + entropy       |
 | RC4 cipher                               |
 
 ## Data structures
 
 | Name structure     | Indexation  | Search         | Inserting    | Deleting    | Memory |
 |:------------------:|:-----------:|:--------------:|:------------:|:-----------:|:------:|
-| Circular Buffer    | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
-| LinkedList         | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
+| Circular buffer    | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
+| Linked list        | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
 
 ## Search
 
@@ -41,19 +41,20 @@ project contains the following algorithms...
 
 | Name algorithm        |Data Structure | Best result  | Average result | Worse result |
 |:---------------------:|:-------------:|:------------:|:--------------:|:------------:|
+| Bubble sorting        |  Array        | O(n)         | O(n^2)         | O(n^2)       |
 | Counting sorting      |  Array        | O(n)         | O(n)           | O(n)         |
-| Move Elements To Left |  Array        | O(n)         | O(n)           | O(n)         |
-| Selection Sorting     |  Array        | O(n)         | O(n^2)         | O(n^2)       |
+| Move elements to left |  Array        | O(n)         | O(n)           | O(n)         |
+| Selection sorting     |  Array        | O(n)         | O(n^2)         | O(n^2)       |
 
 ## Others
 | Name algorithm               |
 |:----------------------------:|
 | BackTrack                    |
 | Fibonacci                    |
-| Reversal Forward List        |
-| Rotate Matrix                |
+| Reversal forward list        |
+| Rotate matrix                |
 
 ## Templates
 | Name templates               |
 |:----------------------------:|
-| Number To String 32 Bits     |
+| Number to string 32 bits     |

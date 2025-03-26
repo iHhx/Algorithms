@@ -51,13 +51,13 @@ int main()
 {
     std::vector<int> vector = { 3,7,1,5,2,1,1,4,7,2,9,5 };
 
-    std::cout << "Not sorted array:\n";
+    std::cout << "Not sorted array: ";
     for (const auto& value : vector)
         std::cout << value << " ";
 
     selectionSorting(vector, [](int a, int b) -> bool { return a > b; });
 
-    std::cout << "\nSorted array:\n";
+    std::cout << "\nSorted array: ";
     for (const auto& value : vector)
         std::cout << value << " ";
 
