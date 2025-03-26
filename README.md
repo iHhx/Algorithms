@@ -57,4 +57,5 @@ project contains the following algorithms...
 ## Templates
 | Name templates               |
 |:----------------------------:|
+| Copy string				   |
 | Number to string 32 bits     |

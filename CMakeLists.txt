@@ -43,5 +43,6 @@ add_executable (SelectionSorting ./Sorting/SelectionSorting.cpp)
 set_target_properties (BubbleSorting CountingSort MoveElementsToLeftOrRight SelectionSorting PROPERTIES FOLDER "Sorting")
 
 # Templates
+add_executable (CopyString ./Templates/CopyString.cpp)
 add_executable (NumberToString32Bits ./Templates/NumberToString32Bits.cpp)
-set_target_properties (NumberToString32Bits PROPERTIES FOLDER "Templates")
+set_target_properties (CopyString NumberToString32Bits PROPERTIES FOLDER "Templates")
