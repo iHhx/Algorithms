@@ -30,6 +30,10 @@ add_executable (LinearSearch ./Search/LinearSearch.cpp)
 add_executable (TernarySearch ./Search/TernarySearch.cpp)
 set_target_properties (BinarySearch LinearSearch TernarySearch PROPERTIES FOLDER "Search")
 
+# SetOperations
+add_executable (UnionOfTheOrderedSets ./SetOperations/UnionOfTheOrderedSets.cpp)
+set_target_properties (UnionOfTheOrderedSets PROPERTIES FOLDER "SetOperations")
+
 # SmartPtr
 add_executable (UniquePtr ./SmartPtr/UniquePtr.cpp)
 add_executable (SharedPtr ./SmartPtr/SharedPtr.cpp)

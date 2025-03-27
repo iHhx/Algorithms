@@ -30,12 +30,18 @@ project contains the following algorithms...
 | Binary search     | Sorted array   | O(log(n))      | O(log(n))    |
 | Linear search     | Array          | O(n)           | O(n)         |
 
-## SmartPointers
+## Set operations
 
-| Name pointer                             |
-|:----------------------------------------:|
-| Shared smart pointer                     |
-| Unique smart pointer                     |
+| Name pointer                     |
+|:--------------------------------:|
+| Union of the ordered sets        |
+
+## Smart pointers
+
+| Name pointer          |
+|:---------------------:|
+| Shared smart pointer  |
+| Unique smart pointer  |
 
 ## Sorting
 
@@ -47,12 +53,12 @@ project contains the following algorithms...
 | Selection sorting     |  Array        | O(n)         | O(n^2)         | O(n^2)       |
 
 ## Others
-| Name algorithm               |
-|:----------------------------:|
-| BackTrack                    |
-| Fibonacci                    |
-| Reversal forward list        |
-| Rotate matrix                |
+| Name algorithm         |
+|:----------------------:|
+| BackTrack              |
+| Fibonacci              |
+| Reversal forward list  |
+| Rotate matrix          |
 
 ## Templates
 | Name templates               |

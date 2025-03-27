@@ -11,7 +11,7 @@ void copy(char to[], char from[])
 
 int main()
 {
-    char string[SIZE] = "test test for testing!";
+    char string[SIZE] = "test text for testing!";
     char copy_string[SIZE] = {};
 
     copy(copy_string, string);
