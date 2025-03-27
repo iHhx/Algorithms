@@ -7,6 +7,12 @@ many algorithms implementations in the C++ standard
 library that are much better for performance reasons. This
 project contains the following algorithms...
 
+## Allocators
+
+| Name allocator     | Allocation | Free   |
+|:------------------:|:----------:|:------:|
+| Linear allocator   | O(1)       | -      |
+
 ## Cryptography
 
 | Name algorithm                           |

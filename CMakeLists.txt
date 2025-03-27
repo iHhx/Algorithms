@@ -5,6 +5,10 @@ project (Algorithms)
 set (CMAKE_CXX_STANDARD 17)
 set_property (GLOBAL PROPERTY USE_FOLDERS ON)
 
+# Allocators
+add_executable (LinearAllocator ./Allocators/LinearAllocator.cpp)
+set_target_properties (LinearAllocator PROPERTIES FOLDER "Allocators")
+
 # Cryptography
 add_executable (CaesarCipher ./Cryptography/CaesarCipher.cpp)
 add_executable (CryptoRandom ./Cryptography/CryptoRandom.cpp)
