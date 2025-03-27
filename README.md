@@ -32,9 +32,12 @@ project contains the following algorithms...
 
 ## Set operations
 
-| Name pointer                     |
-|:--------------------------------:|
-| Union of the ordered sets        |
+| Name algorithm                        |
+|:-------------------------------------:|
+| Difference between ordered sets       |
+| Intersection of the ordered sets      |
+| Symmetric difference of ordered sets  |
+| Union of the ordered sets             |
 
 ## Smart pointers
 

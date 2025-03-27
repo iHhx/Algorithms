@@ -1,8 +1,9 @@
 #include <iostream>
 #include <vector>
 
-template<class Collection, typename = typename Collection::iterator>
-Collection UnionOfTheOrderedSets(Collection& leftCollection, Collection& rightCollection) noexcept
+// Only for ordered sets with doubles
+template<class Collection>
+Collection UnionOfTheOrderedSets(const Collection& leftCollection, const Collection& rightCollection) noexcept
 {
     if (leftCollection.empty())
         return rightCollection;
@@ -12,49 +13,50 @@ Collection UnionOfTheOrderedSets(Collection& leftCollection, Collection& rightCo
     const typename Collection::size_type leftLength = leftCollection.size();
     const typename Collection::size_type rightLength = rightCollection.size();
 
-    Collection answer;
-    answer.reserve(leftLength + rightLength);
+    Collection result;
+    result.reserve(leftLength + rightLength);
 
-    typename Collection::size_type i = 0;
-    typename Collection::size_type j = 0;
+    typename Collection::size_type leftIndex = 0;
+    typename Collection::size_type rightIndex = 0;
 
-    while (i < leftLength || j < rightLength)
+    while (leftIndex < leftLength || rightIndex < rightLength)
     {
-        if (i >= leftLength)
+        if (leftIndex >= leftLength)
         {
-            answer.push_back(rightCollection[j++]);
+            result.push_back(rightCollection.at(rightIndex++));
         }
-        else if (j >= rightLength)
+        else if (rightIndex >= rightLength)
         {
-            answer.push_back(leftCollection[i++]);
+            result.push_back(leftCollection.at(leftIndex++));
         }
-        else if (leftCollection[i] <= rightCollection[j])
+        else if (leftCollection.at(leftIndex) <= rightCollection.at(rightIndex))
         {
-            answer.push_back(leftCollection[i++]);
+            result.push_back(leftCollection.at(leftIndex++));
         }
         else
         {
-            answer.push_back(rightCollection[j++]);
+            result.push_back(rightCollection.at(rightIndex++));
         }
     }
-    return answer;
+
+    return result;
 }
 
 int main()
 {
-    std::vector<int> lVector = { 1,2,3,4,5,6,7,8,9 };
-    std::vector<int> rVector = { 1,3,5,7,9 };
+    const std::vector<int> leftVector = { 1,2,3,4,5,6,7,8,9 };
+    const std::vector<int> rightVector = { 1,3,5,7,9 };
 
     std::cout << "Left sorted array: ";
-    for (const auto& value : lVector)
+    for (const auto& value : leftVector)
         std::cout << value << " ";
 
     std::cout << "\nRight sorted array: ";
-    for (const auto& value : rVector)
+    for (const auto& value : rightVector)
         std::cout << value << " ";
 
-    std::cout << "\nUnion sorted array: ";
-    for (const auto& value : UnionOfTheOrderedSets(lVector, rVector))
+    std::cout << "\nResult: ";
+    for (const auto& value : UnionOfTheOrderedSets(leftVector, rightVector))
         std::cout << value << " ";
 
     return 0;

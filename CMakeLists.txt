@@ -31,8 +31,11 @@ add_executable (TernarySearch ./Search/TernarySearch.cpp)
 set_target_properties (BinarySearch LinearSearch TernarySearch PROPERTIES FOLDER "Search")
 
 # SetOperations
+add_executable (DifferenceBetweenOrderedSets ./SetOperations/DifferenceBetweenOrderedSets.cpp)
+add_executable (IntersectionOfTheOrderedSets ./SetOperations/IntersectionOfTheOrderedSets.cpp)
+add_executable (SymmetricDifferenceOfOrderedSets ./SetOperations/SymmetricDifferenceOfOrderedSets.cpp)
 add_executable (UnionOfTheOrderedSets ./SetOperations/UnionOfTheOrderedSets.cpp)
-set_target_properties (UnionOfTheOrderedSets PROPERTIES FOLDER "SetOperations")
+set_target_properties (DifferenceBetweenOrderedSets IntersectionOfTheOrderedSets SymmetricDifferenceOfOrderedSets UnionOfTheOrderedSets PROPERTIES FOLDER "SetOperations")
 
 # SmartPtr
 add_executable (UniquePtr ./SmartPtr/UniquePtr.cpp)
