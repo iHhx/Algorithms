@@ -63,6 +63,7 @@ project contains the following algorithms...
 | Move elements to left |  Array        | O(n)         | O(n)           | O(n)         |
 | Quick sorting			|  Array        | O(n*log(n))  | O(n*log(n))    | O(n^2)       |
 | Selection sorting     |  Array        | O(n)         | O(n^2)         | O(n^2)       |
+| Shell sorting		    |  Array        | O(n^2)       | O(n^2)         | O(n^2)       |
 
 ## Others
 | Name algorithm         |

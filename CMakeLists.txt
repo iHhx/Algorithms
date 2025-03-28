@@ -54,7 +54,8 @@ add_executable (InsertionSorting ./Sorting/InsertionSorting.cpp)
 add_executable (MoveElementsToLeftOrRight ./Sorting/MoveElementsToLeftOrRight.cpp)
 add_executable (QuickSorting ./Sorting/QuickSorting.cpp)
 add_executable (SelectionSorting ./Sorting/SelectionSorting.cpp)
-set_target_properties (BubbleSorting CountingSort InsertionSorting MoveElementsToLeftOrRight QuickSorting SelectionSorting PROPERTIES FOLDER "Sorting")
+add_executable (ShellSorting ./Sorting/ShellSorting.cpp)
+set_target_properties (BubbleSorting CountingSort InsertionSorting MoveElementsToLeftOrRight QuickSorting SelectionSorting ShellSorting PROPERTIES FOLDER "Sorting")
 
 # Templates
 add_executable (CopyString ./Templates/CopyString.cpp)
