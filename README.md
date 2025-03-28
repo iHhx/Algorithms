@@ -15,12 +15,12 @@ project contains the following algorithms...
 
 ## Cryptography
 
-| Name algorithm                           |
-|:----------------------------------------:|
-| Caesar cipher                            |
-| Hex                                      |
-| Random and crypto random + entropy       |
-| RC4 cipher                               |
+| Name algorithm          |
+|:-----------------------:|
+| Caesar cipher           |
+| Hex                     |
+| Crypto random + entropy |
+| RC4 cipher              |
 
 ## Data structures
 
@@ -59,8 +59,9 @@ project contains the following algorithms...
 |:---------------------:|:-------------:|:------------:|:--------------:|:------------:|
 | Bubble sorting        |  Array        | O(n)         | O(n^2)         | O(n^2)       |
 | Counting sorting      |  Array        | O(n)         | O(n)           | O(n)         |
-| Insertion sorting     |  Array        | O(n)         | O(n^2)         | O(n^2)       |
+| Insertion sorting     |  Array        | O(n^2)       | O(n^2)         | O(n^2)       |
 | Move elements to left |  Array        | O(n)         | O(n)           | O(n)         |
+| Quick sorting			|  Array        | O(n*log(n))  | O(n*log(n))    | O(n^2)       |
 | Selection sorting     |  Array        | O(n)         | O(n^2)         | O(n^2)       |
 
 ## Others
