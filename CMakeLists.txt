@@ -21,12 +21,11 @@ add_executable (CircularBuffer ./DataStructures/CircularBuffer.cpp)
 add_executable (LinkedList ./DataStructures/LinkedList.cpp)
 set_target_properties (CircularBuffer LinkedList PROPERTIES FOLDER "DataStructures")
 
-# Others
-add_executable (BackTrack ./Others/BackTrack.cpp)
+# Others 
 add_executable (Fibonacci ./Others/Fibonacci.cpp)
 add_executable (ReversalForwardList ./Others/ReversalForwardList.cpp)
 add_executable (RotateMatrix ./Others/RotateMatrix.cpp)
-set_target_properties (BackTrack Fibonacci ReversalForwardList RotateMatrix PROPERTIES FOLDER "Others")
+set_target_properties (Fibonacci ReversalForwardList RotateMatrix PROPERTIES FOLDER "Others")
 
 # Search
 add_executable (BinarySearch ./Search/BinarySearch.cpp)
@@ -36,11 +35,13 @@ set_target_properties (BinarySearch LinearSearch TernarySearch PROPERTIES FOLDER
 
 # SetOperations
 add_executable (DifferenceBetweenOrderedSets ./SetOperations/DifferenceBetweenOrderedSets.cpp)
+add_executable (GenerationOfAllPermutationsFromSet ./SetOperations/GenerationOfAllPermutationsFromSet.cpp)
+add_executable (GenerationOfAllSubsetsOfTheSet ./SetOperations/GenerationOfAllSubsetsOfTheSet.cpp)
 add_executable (IntersectionOfTheOrderedSets ./SetOperations/IntersectionOfTheOrderedSets.cpp)
 add_executable (SymmetricDifferenceOfOrderedSets ./SetOperations/SymmetricDifferenceOfOrderedSets.cpp)
 add_executable (UnionOfTheOrderedSets ./SetOperations/UnionOfTheOrderedSets.cpp)
 add_executable (UnionOfTheOrderedSetsWD ./SetOperations/UnionOfTheOrderedSetsWD.cpp)
-set_target_properties (DifferenceBetweenOrderedSets IntersectionOfTheOrderedSets SymmetricDifferenceOfOrderedSets UnionOfTheOrderedSets UnionOfTheOrderedSetsWD PROPERTIES FOLDER "SetOperations")
+set_target_properties (DifferenceBetweenOrderedSets GenerationOfAllPermutationsFromSet GenerationOfAllSubsetsOfTheSet IntersectionOfTheOrderedSets SymmetricDifferenceOfOrderedSets UnionOfTheOrderedSets UnionOfTheOrderedSetsWD PROPERTIES FOLDER "SetOperations")
 
 # SmartPtr
 add_executable (UniquePtr ./SmartPtr/UniquePtr.cpp)

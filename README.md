@@ -38,13 +38,15 @@ project contains the following algorithms...
 
 ## Set operations
 
-| Name algorithm                        |
-|:-------------------------------------:|
-| Difference between ordered sets       |
-| Intersection of the ordered sets      |
-| Symmetric difference of ordered sets  |
-| Union of the ordered sets             |
-| Union of the ordered sets w doubles   |
+| Name algorithm                          |
+|:---------------------------------------:|
+| Difference between ordered sets         |
+| Generation of all permutations from set |
+| Generation of all subsets of the set    |
+| Intersection of the ordered sets        |
+| Symmetric difference of ordered sets    |
+| Union of the ordered sets               |
+| Union of the ordered sets w doubles     |
 
 ## Smart pointers
 
@@ -69,12 +71,11 @@ project contains the following algorithms...
 | Stupid sorting	    |  Array        | O(n)         | O(n^3)         | O(n^3)       |
 
 ## Others
-| Name algorithm         |
-|:----------------------:|
-| BackTrack              |
-| Fibonacci              |
-| Reversal forward list  |
-| Rotate matrix          |
+| Name algorithm             |
+|:--------------------------:|
+| Fibonacci                  |
+| Reversal forward list      |
+| Rotate matrix              |
 
 ## Templates
 | Name templates               |

@@ -1,42 +1,49 @@
 #include <iostream>
 #include <vector>
 
-void countingSort(std::vector<unsigned>& vector) noexcept
+template<class Collection, typename = typename Collection::value_type>
+void countingSort(Collection& collection) noexcept
 {
-	if (vector.size() < 2)
+	if (collection.size() < 2)
 		return;
 
-	std::vector<unsigned> temp(101, 0);//for 100 elements
-	
-	unsigned begin = 100;
-	unsigned end = 0;
+	static_assert(std::is_unsigned<typename Collection::value_type>::value,
+		"Current implementation works only with unsigned types.");
 
-	for (int i = 0; i < vector.size(); i++)
+	Collection temp(101, 0);//for 100 elements
+	
+	std::size_t begin = 100;
+	std::size_t end = 0;
+
+	for (typename Collection::size_type i = 0; i < collection.size(); i++)
 	{
-		begin = std::min(begin, vector[i]);
-		end = std::max(end, vector[i]);
-		++temp[vector[i]];
+		typename Collection::value_type temp_value = collection[i] > 100 ? 100 : collection[i];
+
+		begin = std::min(begin, static_cast<std::size_t>(temp_value));
+		end = std::max(end, static_cast<std::size_t>(temp_value));
+
+		++temp[temp_value];
 	}
 	
-	for (int i = begin, j = 0; i <= end; i++)
+	for (typename Collection::size_type i = begin, j = 0; i <= end; i++)
 	{
 		while (temp[i]--)
-			vector[j++] = i;
+			collection[j++] = i;
 	}
 }
 
 int main() {
 
-	std::vector<unsigned> vector = { 57,3,91,61,2,7,3,2,17,87,7,3 };
+	std::vector<uint16_t> vector = { 57,3,911,611,2,7,3,2,17,87,7,3 };
 
-	for (const auto& val : vector)
-		std::cout << val << " ";
+	for (const auto& value : vector)
+		std::cout << value << " ";
 	std::cout << "\n";
 
 	countingSort(vector);
 
-	for (const auto& val : vector)
-		std::cout << val << " ";
+	for (const auto& value : vector)
+		std::cout << value << " ";
 
 	return 0;
 }

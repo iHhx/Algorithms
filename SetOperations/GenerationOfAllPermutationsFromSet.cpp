@@ -3,7 +3,7 @@
 
 std::size_t factorial(std::size_t num)
 {
-	if(num < 2)
+	if (num < 2)
 		return 1;
 	return num * factorial(num - 1);
 }
@@ -46,7 +46,7 @@ std::vector<std::vector<T>> permute(std::vector<T>& vector)
 
 int main()
 {
-	std::vector<int> vec { 1,2,3,4 };
+	std::vector<int> vec{ 1,2,3 };
 
 	for (const auto value : permute(vec))
 	{
