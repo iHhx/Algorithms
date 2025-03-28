@@ -47,8 +47,9 @@ add_executable (UniquePtr ./SmartPtr/UniquePtr.cpp)
 add_executable (SharedPtr ./SmartPtr/SharedPtr.cpp)
 set_target_properties (SharedPtr UniquePtr PROPERTIES FOLDER "SmartPtr")
 
-# Sorting 
+# Sorting
 add_executable (BubbleSorting ./Sorting/BubbleSorting.cpp)
+add_executable (BucketSorting ./Sorting/BucketSorting.cpp)
 add_executable (CountingSort ./Sorting/CountingSort.cpp)
 add_executable (InsertionSorting ./Sorting/InsertionSorting.cpp)
 add_executable (MergeSorting ./Sorting/MergeSorting.cpp)
@@ -57,7 +58,7 @@ add_executable (QuickSorting ./Sorting/QuickSorting.cpp)
 add_executable (SelectionSorting ./Sorting/SelectionSorting.cpp)
 add_executable (ShellSorting ./Sorting/ShellSorting.cpp)
 add_executable (StupidSorting ./Sorting/StupidSorting.cpp)
-set_target_properties (BubbleSorting CountingSort InsertionSorting MergeSorting MoveElementsToLeftOrRight QuickSorting SelectionSorting ShellSorting StupidSorting PROPERTIES FOLDER "Sorting")
+set_target_properties (BubbleSorting BucketSorting CountingSort InsertionSorting MergeSorting MoveElementsToLeftOrRight QuickSorting SelectionSorting ShellSorting StupidSorting PROPERTIES FOLDER "Sorting")
 
 # Templates
 add_executable (CopyString ./Templates/CopyString.cpp)
