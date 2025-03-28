@@ -44,6 +44,7 @@ project contains the following algorithms...
 | Intersection of the ordered sets      |
 | Symmetric difference of ordered sets  |
 | Union of the ordered sets             |
+| Union of the ordered sets w doubles   |
 
 ## Smart pointers
 

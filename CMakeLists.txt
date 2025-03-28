@@ -39,7 +39,8 @@ add_executable (DifferenceBetweenOrderedSets ./SetOperations/DifferenceBetweenOr
 add_executable (IntersectionOfTheOrderedSets ./SetOperations/IntersectionOfTheOrderedSets.cpp)
 add_executable (SymmetricDifferenceOfOrderedSets ./SetOperations/SymmetricDifferenceOfOrderedSets.cpp)
 add_executable (UnionOfTheOrderedSets ./SetOperations/UnionOfTheOrderedSets.cpp)
-set_target_properties (DifferenceBetweenOrderedSets IntersectionOfTheOrderedSets SymmetricDifferenceOfOrderedSets UnionOfTheOrderedSets PROPERTIES FOLDER "SetOperations")
+add_executable (UnionOfTheOrderedSetsWD ./SetOperations/UnionOfTheOrderedSetsWD.cpp)
+set_target_properties (DifferenceBetweenOrderedSets IntersectionOfTheOrderedSets SymmetricDifferenceOfOrderedSets UnionOfTheOrderedSets UnionOfTheOrderedSetsWD PROPERTIES FOLDER "SetOperations")
 
 # SmartPtr
 add_executable (UniquePtr ./SmartPtr/UniquePtr.cpp)

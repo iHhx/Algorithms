@@ -21,13 +21,13 @@ Collection symmetricDifference(const Collection& leftCollection, const Collectio
 
     while (leftIndex < leftLength && rightIndex < rightLength)
     {
-        if (leftCollection.at(leftIndex) < rightCollection.at(rightIndex))
+        if (leftCollection[leftIndex] < rightCollection[rightIndex])
         {
-            result.push_back(leftCollection.at(leftIndex++));
+            result.push_back(leftCollection[leftIndex++]);
         }
-        else if (leftCollection.at(leftIndex) > rightCollection.at(rightIndex))
+        else if (leftCollection[leftIndex] > rightCollection[rightIndex])
         {
-            result.push_back(rightCollection.at(rightIndex++));
+            result.push_back(rightCollection[rightIndex++]);
         }
         else
         {
@@ -37,12 +37,12 @@ Collection symmetricDifference(const Collection& leftCollection, const Collectio
 
     while (leftIndex < leftLength)
     {
-        result.push_back(leftCollection.at(leftIndex++));
+        result.push_back(leftCollection[leftIndex++]);
     }
 
     while (rightIndex < rightLength)
     {
-        result.push_back(rightCollection.at(rightIndex++));
+        result.push_back(rightCollection[rightIndex++]);
     }
 
     return result;

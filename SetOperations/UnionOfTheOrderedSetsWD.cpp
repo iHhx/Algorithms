@@ -1,13 +1,13 @@
-#include <iostream>
 #include <vector>
+#include <iostream>
 
-// Only for ordered sets with doubles
+// Only for ordered sets without doubles
 template<class Collection>
-Collection UnionOfTheOrderedSets(const Collection& leftCollection, const Collection& rightCollection) noexcept
+Collection UnionOfTheOrderedSetsWD(const Collection& leftCollection, const Collection& rightCollection) noexcept
 {
     if (leftCollection.empty())
         return rightCollection;
-    if(rightCollection.empty())
+    if (rightCollection.empty())
         return leftCollection;
 
     const typename Collection::size_type leftLength = leftCollection.size();
@@ -21,15 +21,12 @@ Collection UnionOfTheOrderedSets(const Collection& leftCollection, const Collect
 
     while (leftIndex < leftLength || rightIndex < rightLength)
     {
-        if (leftIndex >= leftLength)
-        {
-            result.push_back(rightCollection[rightIndex++]);
-        }
-        else if (rightIndex >= rightLength)
+        if (leftCollection[leftIndex] == rightCollection[rightIndex])
         {
             result.push_back(leftCollection[leftIndex++]);
+            ++rightIndex;
         }
-        else if (leftCollection[leftIndex] <= rightCollection[rightIndex])
+        else if (leftCollection[leftIndex] < rightCollection[rightIndex])
         {
             result.push_back(leftCollection[leftIndex++]);
         }
@@ -56,7 +53,7 @@ int main()
         std::cout << value << " ";
 
     std::cout << "\nResult: ";
-    for (const auto& value : UnionOfTheOrderedSets(leftVector, rightVector))
+    for (const auto& value : UnionOfTheOrderedSetsWD(leftVector, rightVector))
         std::cout << value << " ";
 
     return 0;

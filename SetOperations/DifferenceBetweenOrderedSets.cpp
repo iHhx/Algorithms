@@ -21,15 +21,15 @@ Collection difference(const Collection& leftCollection, const Collection& rightC
 
     while (leftIndex < leftLength && rightIndex < rightLength)
     {
-        if (leftCollection.at(leftIndex) == rightCollection.at(rightIndex))
+        if (leftCollection[leftIndex] == rightCollection[rightIndex])
         {
             ++leftIndex, ++rightIndex;
         }
         else
         {
-            if (leftCollection.at(leftIndex) < rightCollection.at(rightIndex))
+            if (leftCollection[leftIndex] < rightCollection[rightIndex])
             {
-                result.push_back(leftCollection.at(leftIndex++));
+                result.push_back(leftCollection[leftIndex++]);
             }
             else
             {
@@ -40,7 +40,7 @@ Collection difference(const Collection& leftCollection, const Collection& rightC
 
     while (leftIndex < leftLength)
     {
-        result.push_back(leftCollection.at(leftIndex++));
+        result.push_back(leftCollection[leftIndex++]);
     }
 
     return result;
