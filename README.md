@@ -60,6 +60,7 @@ project contains the following algorithms...
 | Bubble sorting        |  Array        | O(n)         | O(n^2)         | O(n^2)       |
 | Counting sorting      |  Array        | O(n)         | O(n)           | O(n)         |
 | Insertion sorting     |  Array        | O(n^2)       | O(n^2)         | O(n^2)       |
+| Merge sorting			|  Array        | O(n*log(n))  | O(n*log(n))    | O(n*log(n))  |
 | Move elements to left |  Array        | O(n)         | O(n)           | O(n)         |
 | Quick sorting			|  Array        | O(n*log(n))  | O(n*log(n))    | O(n^2)       |
 | Selection sorting     |  Array        | O(n)         | O(n^2)         | O(n^2)       |

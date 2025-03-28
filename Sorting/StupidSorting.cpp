@@ -29,7 +29,7 @@ void stupidSorting(Collection& collection) noexcept
 
 int main()
 {
-    std::vector<int> vector = { 7, 10, 1, 5, 8, 1, 8, 3, 7, 3 };
+    std::vector<int> vector = { 7,10,1,5,8,1,8,3,7,3 };
 
     std::cout << "Not sorted array: ";
     for (const auto& value : vector)
