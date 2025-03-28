@@ -64,6 +64,7 @@ project contains the following algorithms...
 | Quick sorting			|  Array        | O(n*log(n))  | O(n*log(n))    | O(n^2)       |
 | Selection sorting     |  Array        | O(n)         | O(n^2)         | O(n^2)       |
 | Shell sorting		    |  Array        | O(n^2)       | O(n^2)         | O(n^2)       |
+| Stupid sorting	    |  Array        | O(n)         | O(n^3)         | O(n^3)       |
 
 ## Others
 | Name algorithm         |

@@ -1,7 +1,7 @@
 #include <vector>
 #include <iostream>
 
-template <typename Collection, typename Comparator, typename = typename Collection::iterator>
+template <class Collection, class Comparator, typename = typename Collection::iterator>
 void shellSorting(Collection& collection, Comparator comparator) noexcept
 {
     for (typename Collection::size_type step = collection.size() / 2; step > 0; step /= 2)
@@ -16,7 +16,7 @@ void shellSorting(Collection& collection, Comparator comparator) noexcept
     }
 }
 
-template <typename Collection, typename = typename Collection::iterator>
+template <class Collection, typename = typename Collection::iterator>
 void shellSorting(Collection& collection) noexcept
 {
     for (typename Collection::size_type step = collection.size() / 2; step > 0; step /= 2)
