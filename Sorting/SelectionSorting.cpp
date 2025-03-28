@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-template<class Collection, class Comparator, typename = typename Collection::iterator>
+template<class Collection, class Comparator, typename = typename Collection::size_type>
 void selectionSorting(Collection& collection, Comparator comparator) noexcept
 {
     bool was_sorted = true;

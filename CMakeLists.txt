@@ -50,9 +50,10 @@ set_target_properties (SharedPtr UniquePtr PROPERTIES FOLDER "SmartPtr")
 # Sorting
 add_executable (BubbleSorting ./Sorting/BubbleSorting.cpp)
 add_executable (CountingSort ./Sorting/CountingSort.cpp)
+add_executable (InsertionSorting ./Sorting/InsertionSorting.cpp)
 add_executable (MoveElementsToLeftOrRight ./Sorting/MoveElementsToLeftOrRight.cpp)
 add_executable (SelectionSorting ./Sorting/SelectionSorting.cpp)
-set_target_properties (BubbleSorting CountingSort MoveElementsToLeftOrRight SelectionSorting PROPERTIES FOLDER "Sorting")
+set_target_properties (BubbleSorting CountingSort InsertionSorting MoveElementsToLeftOrRight SelectionSorting PROPERTIES FOLDER "Sorting")
 
 # Templates
 add_executable (CopyString ./Templates/CopyString.cpp)
