@@ -24,8 +24,9 @@ set_target_properties (CircularBuffer LinkedList PROPERTIES FOLDER "DataStructur
 # Others 
 add_executable (Fibonacci ./Others/Fibonacci.cpp)
 add_executable (ReversalForwardList ./Others/ReversalForwardList.cpp)
+add_executable (ReverseMatrixDiagonals ./Others/ReverseMatrixDiagonals.cpp)
 add_executable (RotateMatrix ./Others/RotateMatrix.cpp)
-set_target_properties (Fibonacci ReversalForwardList RotateMatrix PROPERTIES FOLDER "Others")
+set_target_properties (Fibonacci ReversalForwardList ReverseMatrixDiagonals RotateMatrix PROPERTIES FOLDER "Others")
 
 # Search
 add_executable (BinarySearch ./Search/BinarySearch.cpp)

@@ -75,6 +75,7 @@ project contains the following algorithms...
 |:--------------------------:|
 | Fibonacci                  |
 | Reversal forward list      |
+| Reverse matrix diagonals   |
 | Rotate matrix              |
 
 ## Templates
