@@ -12,6 +12,7 @@ project contains the following algorithms...
 | Name allocator     | Allocation | Free   |
 |:------------------:|:----------:|:------:|
 | Linear allocator   | O(1)       | -      |
+| Standard allocator | O(1)       | -      |
 
 ## Cryptography
 
