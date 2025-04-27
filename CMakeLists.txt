@@ -20,7 +20,8 @@ set_target_properties (CaesarCipher CryptoRandom Hex RC4Cipher PROPERTIES FOLDER
 # DataStructures
 add_executable (CircularBuffer ./DataStructures/CircularBuffer.cpp)
 add_executable (LinkedList ./DataStructures/LinkedList.cpp)
-set_target_properties (CircularBuffer LinkedList PROPERTIES FOLDER "DataStructures")
+add_executable (XORLinkedList ./DataStructures/XORLinkedList.cpp)
+set_target_properties (CircularBuffer LinkedList XORLinkedList PROPERTIES FOLDER "DataStructures")
 
 # Others 
 add_executable (Fibonacci ./Others/Fibonacci.cpp)

@@ -29,6 +29,7 @@ project contains the following algorithms...
 |:------------------:|:-----------:|:--------------:|:------------:|:-----------:|:------:|
 | Circular buffer    | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
 | Linked list        | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
+| XOR Linked list    | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
 
 ## Search
 
